@@ -45,7 +45,7 @@ function welcome (name) {
 //What is the difference between arguments and parameters?
 
   //Answer Here
-
+  //argument is what is the actual value being used in the function the parameter is what is being passed in
 
 //////////////////PROBLEM 5////////////////////
 
@@ -55,7 +55,8 @@ function welcome (name) {
 
 
   //Answer Here
-
+  //0, null, undefined, flase, "", NaN
+  //using boolean expersions
 
 
 //////////////////PROBLEM 6////////////////////
@@ -87,16 +88,17 @@ function welcome (name) {
 //Create a function called outerFn which returns an anonymous function which returns your name.
 
  function outerFn () {
-   return function x () {
+   return function () {
      return "Wesley";
    };
  }
 
 //Now save the result of invoking outerFn into a variable called innerFn.
 
- function innerFn () {
-    return outerFn();
-  }
+ // function innerFn () {
+ //    return outerFn();
+ //  }
+  var innerFn = outerFn();
 
 //Now invoke innerFn.
 
